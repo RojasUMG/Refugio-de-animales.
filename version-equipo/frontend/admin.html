@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Panel del refugio</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="barra-superior">  
+  <div class="logo">
+    <img src="img/logo.png" alt="Logo Refugio" class="img-logo">
+    <span>Refugio de Animales</span>
+  </div>  
+  <nav>  
+    <a href="index.html">Adoptar</a>  
+    <a href="admin.html">Panel del refugio</a>  
+  </nav>  
+</header>
+
+<div class="contenedor">
+    <h1>Panel del refugio</h1>
+    <p class="meta">Vista interna para el equipo: solicitudes de adopción, cola de atención veterinaria y sugerencias de compatibilidad.</p>
+
+    <div class="pestanas">
+        <div class="pestana activa" data-pestana="solicitudes">Solicitudes de adopción</div>
+        <div class="pestana" data-pestana="veterinaria">Cola veterinaria</div>
+        <div class="pestana" data-pestana="compatibilidad">Sugerencias de compatibilidad</div>
+    </div>
+
+    <section id="panel-solicitudes"></section>
+    <section id="panel-veterinaria" hidden></section>
+    <section id="panel-compatibilidad" hidden></section>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
