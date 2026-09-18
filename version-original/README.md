@@ -101,13 +101,3 @@ archivo y refresca el navegador (F5).
 - **Sin sistema de login:** el enfoque del curso es la logica de datos/algoritmos, no
   autenticacion. Las solicitudes de adopcion piden elegir un `usuario_id` ya existente en
   la tabla `usuarios` (puedes crear usuarios de prueba directamente en MySQL Workbench).
-
-## Siguientes pasos sugeridos para el equipo
-
-- Carlos puede extender `ArbolBinarioBusqueda`/`TablaHash` con mas vistas de clasificacion.
-- Jonathan puede agregar un campo real de urgencia en `registros_medicos` en vez de la
-  heuristica por palabras clave de `VeterinariaService.clasificarUrgencia()`.
-- Deydry puede ajustar los pesos de `GrafoCompatibilidad.calcularPeso()` con mas criterios
-  de `preferencias_del_adoptante` (tiene_ninos, otras_mascotas).
-- David puede ampliar los endpoints de registros medicos/rescate con edicion y borrado.
-- Patricia puede mejorar el diseño visual del frontend (`frontend/css/styles.css`).
