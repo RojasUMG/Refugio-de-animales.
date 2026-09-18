@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refugio de Animales - Adopciones</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="barra-superior">
+    <div class="logo">🐾 Refugio de Animales</div>
+    <nav>
+        <a href="index.html">Adoptar</a>
+        <a href="admin.html">Panel del refugio</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Encuentra a tu nuevo mejor amigo</h1>
+    <p>Animales rescatados, evaluados y listos para un hogar responsable.</p>
+</section>
+
+<div class="contenedor">
+    <form class="filtros" id="formulario-filtros">
+        <div class="campo-filtro">
+            <label for="filtro-especie">Especie</label>
+            <select id="filtro-especie">
+                <option value="">Todas</option>
+            </select>
+        </div>
+        <div class="campo-filtro">
+            <label for="filtro-tamano">Tamaño</label>
+            <select id="filtro-tamano">
+                <option value="">Todos</option>
+            </select>
+        </div>
+        <div class="campo-filtro">
+            <label for="filtro-sexo">Sexo</label>
+            <select id="filtro-sexo">
+                <option value="">Ambos</option>
+            </select>
+        </div>
+        <div class="campo-filtro" style="min-width: 200px;">
+            <label for="filtro-nombre">Buscar por nombre</label>
+            <input type="text" id="filtro-nombre" placeholder="Ej. Firulais">
+        </div>
+        <button type="submit" class="boton">Filtrar</button>
+        <button type="button" class="boton secundario" id="boton-limpiar">Limpiar</button>
+    </form>
+
+    <p class="contador-resultados" id="contador-resultados"></p>
+
+    <div class="rejilla-animales" id="rejilla-animales">
+        <p class="mensaje-vacio">Cargando animales...</p>
+    </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
